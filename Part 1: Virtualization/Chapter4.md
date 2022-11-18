@@ -13,4 +13,13 @@ based on time.
 
 Space sharing is the process of dividing resources porportionally to the tasks that needs it.
 
-To understand 
+Understanding the "machine state" is fundamental to understand all the elements that make up the process. In simpler words, *what parts of the machine* can read/update the process at any given time? For instance, *memory*. The data that uses the memory run in as well as read/write, thus making the memory a part of the process.
+
+## Process API
+Think of this as the fundamental "operations" we can do on an OS
+
+- **Create** \: Creating a new process upon entering commands. A good example is opening up a game on your pc, when double clicking your game, the game opens. 
+- **Destroy** \: An interface that is able to "destroy" or "terminate" a running program. Notably on windows, you can end a task through the task manager. For instance when your game crashes, you can simply forceably shut it down.
+- **Wait** \: Don't know why it's important but basically waiting for a process to stop running.
+- **Miscellaneous Control** \: Controls such as suspending a task for a time period and resuming later. For example, disabling anti-cheat for whatever purpose
+- **Status** \: An interface that retrieves information about the status of the machine, for example the amount of time a process has been running
