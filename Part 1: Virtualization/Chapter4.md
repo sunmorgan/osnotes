@@ -40,3 +40,4 @@ This simply means the *state* of a process at a given time. It is generally spec
 - Blocked\: This says a process has done some operation such that it is not able to run until some arbitrary event takes place
 
 <img width="502" alt="image" src="https://user-images.githubusercontent.com/64807003/202863997-ea5b4737-535e-4ca3-ac0b-69251701cf8d.png">
+In the diagram, the running and ready state are interchangable. In simpler terms, moving a process from ready to running means the process has been scheduled; while moving a process from running to ready means the process has been descheduled.
