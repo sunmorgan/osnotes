@@ -27,3 +27,16 @@ Think of this as the fundamental "operations" we can do on an OS
 When the OS is running a program, they would first load its code into memory(The address space of the progress). Something to note, is that all programs are initially stored in the hardware(hardrives/SSD), the job of the OS is to read the data of bytes and place them in memory. Refer to the picture below:
 
 <img width="717" alt="image" src="https://user-images.githubusercontent.com/64807003/202829419-55e989c9-c791-4860-b4e5-ef3d62bd7a79.png">
+
+The OS then allocates some memory for the run-time stack and gives it to the process. The OS could potentially allocate some memory for the *heap*, which 
+is used for dynamically-allocated data(think hashmaps, arraylists)
+
+The OS will also fullfill on initialization tasks, in which refers to I/Os.
+
+## Process States
+This simply means the *state* of a process at a given time. It is generally specified into 3 statuses\:
+- Running\: This says a process is running on a processor, meaning that it is executing instructions
+- Ready\: This says a process is ready to be executed, but the OS decides to not run it at the moment
+- Blocked\: This says a process has done some operation such that it is not able to run until some arbitrary event takes place
+
+<img width="502" alt="image" src="https://user-images.githubusercontent.com/64807003/202863997-ea5b4737-535e-4ca3-ac0b-69251701cf8d.png">
