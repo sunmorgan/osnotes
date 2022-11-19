@@ -23,3 +23,7 @@ Think of this as the fundamental "operations" we can do on an OS
 - **Wait** \: Don't know why it's important but basically waiting for a process to stop running.
 - **Miscellaneous Control** \: Controls such as suspending a task for a time period and resuming later. For example, disabling anti-cheat for whatever purpose
 - **Status** \: An interface that retrieves information about the status of the machine, for example the amount of time a process has been running
+
+When the OS is running a program, they would first load its code into memory(The address space of the progress). Something to note, is that all programs are initially stored in the hardware(hardrives/SSD), the job of the OS is to read the data of bytes and place them in memory. Refer to the picture below:
+
+<img width="717" alt="image" src="https://user-images.githubusercontent.com/64807003/202829419-55e989c9-c791-4860-b4e5-ef3d62bd7a79.png">
