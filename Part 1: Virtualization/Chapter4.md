@@ -41,3 +41,6 @@ This simply means the *state* of a process at a given time. It is generally spec
 
 <img width="502" alt="image" src="https://user-images.githubusercontent.com/64807003/202863997-ea5b4737-535e-4ca3-ac0b-69251701cf8d.png">
 In the diagram, the running and ready state are interchangable. In simpler terms, moving a process from ready to running means the process has been scheduled; while moving a process from running to ready means the process has been descheduled.
+
+## Data Structure
+An OS usually have a data structure that encapsulates important information, for example, a *process list*. The OS would use it to track the state of each process.
